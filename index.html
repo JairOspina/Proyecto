@@ -8,66 +8,67 @@
     <title>Mi Primera Pagina Web</title>
 </head>
 <body>
-    <div class="container-nav">
-        <nav class="navbar">
+    <header class="container-nav">
+        <nav class="navbar" role="navigation">
             <a href="#" class="brand">Mi página web</a>
             <ul class="nav-links">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="html/about.html">NOSOTROS</a></li>
+                <li><a href="html/services.html">SERVICIOS</a></li>
+                <li><a href="html/contact.html">CONTACTO</a></li>
             </ul>
         </nav>
             <button class="button-menu-toggle">Menu</button>
-    </div>
+    </header>
     
     <div class="container">
-        <h1>Bienvenidos a mi primer Website!</h1>
+        <h1>Bienvenidos a mi primer Website</h1>
+       
+        <main>
+            <div class="row">
+                <section class="column">
+                    <img src="https://media.revistagq.com/photos/5f45010acb266484bb785c78/16:9/pass/dragon-ball-z.jpg" alt="mi imagen">
+                    <p>Soy [Eder Jair Ospina], ¡y esta es mi primera página web!
+                    Estoy aprendiendo desarrollo web para crear sitios web visualmente 
+                    atrapantes y funcionales. <br>
+                    A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. 
+                    Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.
+                    </p>
+                </section>
+    
+                <section class="column">
 
-        <div class="row">
-            <div class="column">
                 <img src="https://media.revistagq.com/photos/5f45010acb266484bb785c78/16:9/pass/dragon-ball-z.jpg" alt="mi imagen">
+                <p>El desarrollo web es un proceso complejo que 
+                    implica la creación de productos digitales en línea. También es un 
+                    término que define la creación de sitios web para Internet o una intranet.
+                </p>
+                </section>
+                <section>
+                <h3>¿tipos de lenguaje de programacion?</h3>
+    
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ipsam commodi tempora, 
+                    consectetur sit officia nam nobis et eaque eius harum facere necessitatibus adipisci repudiandae obcaecati 
+                    odit ullam ipsum nihil.</p>
+                </section>
 
-            <p>Soy [Eder Jair Ospina], ¡y esta es mi primera página web!
-            Estoy aprendiendo desarrollo web para crear sitios web visualmente 
-            atrapantes y funcionales. <br>
-            A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. 
-            Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.
-            </p>
-        </div>
+                <section class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qWcwFMAqpME" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+                </section>
+                
+            </div>    
+        </main>
+      
+        <footer>
+            <!-- Contenido del pie de página -->
+            <p>Este es el footer de mi pagina</p>
+            <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
+        </footer>
 
-        <div class="column">
-            <h2>¿Qué significa el desarrollo web?</h2>
 
-            <p>El desarrollo web es un proceso complejo que 
-                implica la creación de productos digitales en línea. También es un 
-                término que define la creación de sitios web para Internet o una intranet.
-            </p>
-        </div>
-        <div class="colums">
-            <h3>¿tipos de lenguaje de programacion?</h3>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ipsam commodi tempora, 
-                consectetur sit officia nam nobis et eaque eius harum facere necessitatibus adipisci repudiandae obcaecati 
-                odit ullam ipsum nihil.</p>
-        </div>
-
-        <button id="miBoton">Haz Clic Aqui</button>
-        
-        </div>
-        <br><br>
-
-        <div>
-            <form id="myForm">
-                <!-- campo para correo -->
-                <label for="email">Correo Electronico</label>
-                <input type="email" id="email" name="email" required>
-
-                <!-- Boton envio -->
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>
+      </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
